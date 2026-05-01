@@ -26,7 +26,7 @@ public static class Program
             "false"
         );
 
-        return await new CliApplicationBuilder()
+        return await new CommandLineApplicationBuilder()
             .AddCommandsFromThisAssembly()
             .Build()
             .RunAsync(args);
