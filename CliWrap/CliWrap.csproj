@@ -18,12 +18,6 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
-  <PropertyGroup>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
-    <PublicSign>false</PublicSign>
-  </PropertyGroup>
-
   <ItemGroup>
     <None Include="../favicon.png" Pack="true" PackagePath="" Visible="false" />
   </ItemGroup>
@@ -37,6 +31,7 @@
     />
     <PackageReference Include="PolyShim" PrivateAssets="all" />
     <PackageReference Include="PowerKit" Internalize="true" PrivateAssets="all" />
+    <PackageReference Include="Snek" PrivateAssets="all" />
     <PackageReference
       Include="System.Threading.Tasks.Extensions"
       Condition="!$([MSBuild]::IsTargetFrameworkCompatible('$(TargetFramework)', 'netstandard2.1'))"
